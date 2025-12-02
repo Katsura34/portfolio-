@@ -1,0 +1,130 @@
+{
+  "profile": {
+    "name": "John Doe",
+    "title": "Full Stack Developer",
+    "tagline": "Building innovative solutions with modern technologies",
+    "photo": "assets/img/profile.svg"
+  },
+  "summary": "Experienced Full Stack Developer with 5+ years of expertise in designing and implementing scalable web applications. Passionate about creating user-centric solutions using modern technologies. Strong background in JavaScript, React, Node.js, and cloud infrastructure. Committed to writing clean, maintainable code and following best practices.",
+  "contact": {
+    "email": "john.doe@example.com",
+    "phone": "+1 (555) 123-4567",
+    "location": "San Francisco, CA",
+    "social": {
+      "github": "https://github.com/johndoe",
+      "linkedin": "https://linkedin.com/in/johndoe",
+      "portfolio": "https://johndoe.dev"
+    }
+  },
+  "skills": {
+    "Technical": [
+      "JavaScript",
+      "TypeScript",
+      "React",
+      "Node.js",
+      "Python",
+      "HTML5/CSS3"
+    ],
+    "Tools": [
+      "Git",
+      "Docker",
+      "AWS",
+      "MongoDB",
+      "PostgreSQL",
+      "VS Code"
+    ],
+    "Soft Skills": [
+      "Team Leadership",
+      "Problem Solving",
+      "Communication",
+      "Agile/Scrum",
+      "Project Management"
+    ]
+  },
+  "experience": [
+    {
+      "position": "Senior Full Stack Developer",
+      "company": "Tech Solutions Inc.",
+      "dates": "Jan 2021 - Present",
+      "achievements": [
+        "Led development of microservices architecture serving 100K+ daily users",
+        "Reduced application load time by 40% through optimization and caching strategies",
+        "Mentored team of 5 junior developers in best practices and code quality",
+        "Implemented CI/CD pipeline reducing deployment time by 60%"
+      ]
+    },
+    {
+      "position": "Full Stack Developer",
+      "company": "Digital Innovations LLC",
+      "dates": "Mar 2019 - Dec 2020",
+      "achievements": [
+        "Developed and maintained RESTful APIs using Node.js and Express",
+        "Built responsive web applications using React and Redux",
+        "Collaborated with UX designers to implement pixel-perfect designs",
+        "Improved application security by implementing OAuth 2.0 authentication"
+      ]
+    },
+    {
+      "position": "Junior Web Developer",
+      "company": "StartUp Ventures",
+      "dates": "Jun 2018 - Feb 2019",
+      "achievements": [
+        "Created dynamic web pages using HTML, CSS, and JavaScript",
+        "Assisted in database design and optimization",
+        "Participated in code reviews and team meetings",
+        "Fixed bugs and implemented new features based on user feedback"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Bachelor of Science in Computer Science",
+      "school": "University of California, Berkeley",
+      "dates": "2014 - 2018"
+    },
+    {
+      "degree": "Full Stack Web Development Certificate",
+      "school": "Coding Bootcamp",
+      "dates": "2018"
+    }
+  ],
+  "projects": [
+    {
+      "title": "E-Commerce Platform",
+      "description": "Built a full-featured e-commerce platform with payment integration, inventory management, and admin dashboard using MERN stack.",
+      "link": "https://github.com/johndoe/ecommerce"
+    },
+    {
+      "title": "Task Management App",
+      "description": "Developed a collaborative task management application with real-time updates using React, Node.js, and WebSockets.",
+      "link": "https://github.com/johndoe/taskmanager"
+    },
+    {
+      "title": "Weather Dashboard",
+      "description": "Created a weather dashboard that displays current conditions and forecasts using third-party APIs and modern UI design.",
+      "link": "https://github.com/johndoe/weather-dashboard"
+    },
+    {
+      "title": "Portfolio Website Generator",
+      "description": "Built a tool that generates customizable portfolio websites from JSON data with multiple theme options.",
+      "link": "https://github.com/johndoe/portfolio-gen"
+    }
+  ],
+  "certifications": [
+    {
+      "name": "AWS Certified Solutions Architect",
+      "issuer": "Amazon Web Services",
+      "year": "2022"
+    },
+    {
+      "name": "Professional Scrum Master I",
+      "issuer": "Scrum.org",
+      "year": "2021"
+    },
+    {
+      "name": "MongoDB Certified Developer",
+      "issuer": "MongoDB University",
+      "year": "2020"
+    }
+  ]
+}
