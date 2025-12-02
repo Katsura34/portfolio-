@@ -105,7 +105,13 @@ function populateExperience(experience) {
         
         const dates = document.createElement('p');
         dates.className = 'experience-dates';
-        dates.innerHTML = `<i class="bi bi-calendar3"></i> ${job.dates}`;
+        
+        const calendarIcon = document.createElement('i');
+        calendarIcon.className = 'bi bi-calendar3';
+        dates.appendChild(calendarIcon);
+        
+        const dateText = document.createTextNode(' ' + job.dates);
+        dates.appendChild(dateText);
         
         const achievements = document.createElement('ul');
         achievements.className = 'experience-achievements';
@@ -146,7 +152,13 @@ function populateEducation(education) {
         
         const dates = document.createElement('p');
         dates.className = 'education-dates';
-        dates.innerHTML = `<i class="bi bi-calendar3"></i> ${edu.dates}`;
+        
+        const calendarIcon = document.createElement('i');
+        calendarIcon.className = 'bi bi-calendar3';
+        dates.appendChild(calendarIcon);
+        
+        const dateText = document.createTextNode(' ' + edu.dates);
+        dates.appendChild(dateText);
         
         cardBody.appendChild(degree);
         cardBody.appendChild(school);
