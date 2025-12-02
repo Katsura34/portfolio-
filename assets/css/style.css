@@ -420,9 +420,13 @@ footer {
 
 /* Accessibility */
 @media (prefers-reduced-motion: reduce) {
-    * {
+    .fade-in {
         animation: none !important;
-        transition: none !important;
+        opacity: 1 !important;
+    }
+    
+    * {
+        transition-duration: 0.01ms !important;
     }
 }
 

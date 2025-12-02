@@ -12,14 +12,17 @@ async function loadResumeData() {
     } catch (error) {
         console.error('Error loading resume data:', error);
         // Show error message to user
-        document.body.innerHTML = `
-            <div class="container text-center mt-5">
-                <div class="alert alert-danger">
-                    <h4>Error Loading Resume</h4>
-                    <p>Unable to load resume data. Please check the console for details.</p>
-                </div>
+        const main = document.querySelector('main') || document.body;
+        const errorDiv = document.createElement('div');
+        errorDiv.className = 'container text-center mt-5';
+        errorDiv.innerHTML = `
+            <div class="alert alert-danger">
+                <h4>Error Loading Resume</h4>
+                <p>Unable to load resume data. Please check the console for details.</p>
             </div>
         `;
+        main.innerHTML = '';
+        main.appendChild(errorDiv);
     }
 }
 
@@ -247,34 +250,60 @@ function populateContact(contact) {
     // Email
     const emailCol = document.createElement('div');
     emailCol.className = 'col-md-6 mb-3';
-    emailCol.innerHTML = `
-        <div class="contact-item">
-            <i class="bi bi-envelope-fill"></i>
-            <a href="mailto:${contact.email}" class="contact-link">${contact.email}</a>
-        </div>
-    `;
+    
+    const emailItem = document.createElement('div');
+    emailItem.className = 'contact-item';
+    
+    const emailIcon = document.createElement('i');
+    emailIcon.className = 'bi bi-envelope-fill';
+    
+    const emailLink = document.createElement('a');
+    emailLink.href = `mailto:${contact.email}`;
+    emailLink.className = 'contact-link';
+    emailLink.textContent = contact.email;
+    
+    emailItem.appendChild(emailIcon);
+    emailItem.appendChild(emailLink);
+    emailCol.appendChild(emailItem);
     container.appendChild(emailCol);
     
     // Phone
     const phoneCol = document.createElement('div');
     phoneCol.className = 'col-md-6 mb-3';
-    phoneCol.innerHTML = `
-        <div class="contact-item">
-            <i class="bi bi-telephone-fill"></i>
-            <a href="tel:${contact.phone}" class="contact-link">${contact.phone}</a>
-        </div>
-    `;
+    
+    const phoneItem = document.createElement('div');
+    phoneItem.className = 'contact-item';
+    
+    const phoneIcon = document.createElement('i');
+    phoneIcon.className = 'bi bi-telephone-fill';
+    
+    const phoneLink = document.createElement('a');
+    phoneLink.href = `tel:${contact.phone}`;
+    phoneLink.className = 'contact-link';
+    phoneLink.textContent = contact.phone;
+    
+    phoneItem.appendChild(phoneIcon);
+    phoneItem.appendChild(phoneLink);
+    phoneCol.appendChild(phoneItem);
     container.appendChild(phoneCol);
     
     // Location
     const locationCol = document.createElement('div');
     locationCol.className = 'col-md-6 mb-3';
-    locationCol.innerHTML = `
-        <div class="contact-item">
-            <i class="bi bi-geo-alt-fill"></i>
-            <span class="contact-link">${contact.location}</span>
-        </div>
-    `;
+    
+    const locationItem = document.createElement('div');
+    locationItem.className = 'contact-item';
+    
+    const locationIcon = document.createElement('i');
+    locationIcon.className = 'bi bi-geo-alt-fill';
+    
+    const locationSpan = document.createElement('span');
+    locationSpan.className = 'contact-link';
+    locationSpan.textContent = contact.location;
+    
+    locationItem.appendChild(locationIcon);
+    locationItem.appendChild(locationSpan);
+    locationCol.appendChild(locationItem);
     container.appendChild(locationCol);
     
     // Social Links
